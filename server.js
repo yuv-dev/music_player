@@ -38,7 +38,7 @@ mongoose.connect(dbConfig.DB_URL, async () => {
     if (await Playlist.collection.countDocuments() > 0) {
       await Playlist.collection.drop();
     }
-    // await Album.collection.drp();
+    // await Album.collection.drop();
     // await Song.collection.drop();
 
     // Create Seed data
